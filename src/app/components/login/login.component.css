@@ -1,0 +1,72 @@
+.login{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: url('../../../assets/images/login-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+input{
+    
+        font-family: Poppins-Regular;
+        color: #333333;
+        line-height: 1.2;
+        font-size: 18px;
+        width: 100%;
+        background: transparent;
+        height: 50px;
+        padding: 0 20px;
+        border-radius: 10px;
+        background-color: #f7f7f7;
+    border: 1px solid #e6e6e6;
+  
+}
+input:focus-visible{
+    border: 1px solid black ;
+    outline: none;
+
+}
+
+.loginFormContainer{
+  
+        width: 450px;
+        padding: 50px 50px 30px 50px;
+        background: #fff;
+        border-radius: 10px;
+           
+}
+.input-label{
+    font-family: Montserrat-SemiBold;
+    font-size: 16px;
+    color: #363030;
+    line-height: 1.5;
+    margin-left: 5px;
+}
+.row{
+    justify-content: center;
+}
+button{
+    width: 100%;
+    background-color: #333333;
+    color: #e6e6e6;
+    height: 50px;
+    border-radius: 10px;
+}
+.text{
+    font-family: Poppins-Regular;
+    font-size: 14px;
+    color: #999999;
+    line-height: 1.5;
+}
+input.ng-invalid.ng-touched {
+    border: 1px solid red;
+}
+button:disabled{
+    background-color: #f7f7f7;
+    color:rgb(189, 182, 182)
+}

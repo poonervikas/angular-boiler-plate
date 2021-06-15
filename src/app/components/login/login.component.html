@@ -1,0 +1,37 @@
+<div class="login">
+    <div class="container">
+        <div class="row">
+            <div class="  loginFormContainer ">
+                <div class="alert alert-danger text-center" *ngIf="loginError" role="alert">
+                    {{errorMessage}}
+                  </div>
+                <h3 class="text-center">Sign In</h3>
+
+                <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
+                    
+                    <div>
+                        <label class="input-label">Email</label>
+                    </div>
+                    <input type="email" required email name="email" ngModel>
+                    <small class="text text-danger" >**Password is Required</small>
+
+                    <div>
+                        <label class="input-label mt-20">Password</label>
+                    </div>
+                    <input type="password" required name="password" ngModel>
+                    <small class="text text-danger" >**Password is Required</small>
+
+
+                    <div class="mt-30">
+                        <button  [disabled]='!loginForm.valid'>Sign In</button>
+                    </div>
+                    <div class="conatiner text-center mt-30">
+                        <span class="text">Not a member? Sign up now</span><br>
+                        <span class="text">Forget Password</span>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
